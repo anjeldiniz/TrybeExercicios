@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fomulário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Fomulário</h1>
+  <form action="" method="GET" enctype="multipart/form-data">
+    <label for="inputNameUser">Nome Completo:
+      <input type="text" name="nameUser" id="inputNameUser" placeholder="digite seu nome">
+    </label>
+    <br>
+    <label for="input-email">E-mail:
+      <input type="email" name="e-mail" id="input-email" placeholder="digite seu e-mail" required autofocus>
+    </label>
+    <br>
+    <label for="input-senha">Senha:
+      <input type="password" name="senhca" id="input-senha" placeholder="digite sua senha" required autocomplete="off">
+    </label>
+    <br>
+    <label for="">Estado onde você mora:
+      <select name="estado" id="input-estado">
+        <option value="RJ" selected>Rio de Janeiro</option>
+        <option value="SP">São Paulo</option>
+        <option value="MG">Minas Genrais</option>
+      </select>
+    </label>
+    <br>
+    <p>Selecione a sua foto:</p>
+    <input type="file" name="foto" id="input-foto">
+    <br>
+    <p>Comidas Favoritas:</p>
+    <label for="">
+      <input type="radio" id="comida1" name="comida-favorita" value="pizza" checked> Pizza
+      <input type="radio" id="comida2" name="comida-favorita" value="sorvete">Sorvete
+      <input type="radio" id="comida3" name="comida-favorita" value="pipoca">Pipoca
+    </label>
+    <br>
+    <p>Escreva um paragrafo sobre você:</p>
+    <textarea name="sobre-mim" id="textarea-1" cols="30" rows="5"></textarea>
+    <br>
+    <label for="input-promocoes">
+      <input type="checkbox" name="promocoes" id="input-promocoes">Deseja receber promoções?
+    </label>
+    <br>
+    <br>
+    <button type="submit" id="buttonSubmit">Enviar</button>
+    <br>
+    <br>
+    <a href="www.betrybe.com" target="_blank" id="href">TRYBE</a>
+    <br>
+    <input type="text" id="input-text"/>
+    <br>
+    <input type="checkbox" id="input-checkbox" />
+    <script src="script.js"></script>
+  </form>
+</body>
+</html>
