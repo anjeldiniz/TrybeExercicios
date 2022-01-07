@@ -2,17 +2,85 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Formulário</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="jquery-3.6.0.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-  <h1>Código Secreto</h1>
+  <h1 class="display-4 text-muted">FORMULÁRIO</h1>
+  <form>
+    <fieldset>
+      <legend>Informacoes pessoais</legend>
+      <div class="form-group">
+        <label for="input-name">Nome:</label>
+        <input class="form-control" type="text" name="name" id="input-name">
+      </div class="form-group">
+      
+      <div class="form-group">
+        <label for="input-sobrename">Sobrenome:</label>
+        <input class="form-control" type="text" name="sobre-name" id="input-sobrename">
+      </div class="form-group">
+      
+      <div class="form-group">
+        <label for="input-email">Email:</label>
+        <input class="form-control" type="email" name="email" id="input-email">
+      </div class="form-group">
+      
+      <div class="form-group">
+        <label for="input-estado">Estado:</label>
+        <select id="input-estado">
+        <option value="" selected disabled>Selecione seu estado</option>
+        </select>
+      </div class="form-group">
+      
+      <div class="form-group">
+        <label for="input-dato">Data de Nasc:</label>
+        <input class="form-control" type="date" name="data" id="input-data">
+      </div class="form-group">
+
+      <div class="form-group">
+        <p>Selecione uma foto:</p>
+        <input class="form-control btn btn-warning" type="file" name="foto" id="foto-perfil">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Tecnologias</legend>
+
+      <div class="form-group">
+        <p>Qual vc prefere?</p>
+        <label for="input-front">
+          <input class="form-control" type="radio" id="input-front"name="preferencia" value="Front" checked>Front End
+        </label>
+        <label for="input-back">
+          <input class="form-control" type="radio" id="input-back"name="preferencia" value="Back" >Back End
+          </label>
+      </div class="form-group">
+
+      <div class="form-group">
+        <p>O que vc ja aprendeu?</p>
+        <label for="check-git">Git</label>
+          <input class="form-control" type="checkbox" id="check-git" value="Git">
+        <label for="check-css">CSS</label>
+          <input class="form-control" type="checkbox" id="check-css" value="CSS">
+      </div class="form-group">
+      
+      <div class="form-group">
+        <p>Conte-nos sobre vc</p>
+        <textarea class="form-control" name="sobreVoce" id="text-sobre" cols="30" rows="5"></textarea>
+      </div class="form-group">
+      
+      <div class="form-group" class="buttons">
+        <button type="submit" class="btn btn-success">Enviar</button>
+        <button type="reset" class="btn btn-success">Limpar</button>
+      </div class="form-group">
+    </fieldset>
+  </form>
+
   <script src="//cdn.rawgit.com/namuol/cheet.js/master/cheet.min.js"
   type="text/javascript"></script>
-  <script src="library.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

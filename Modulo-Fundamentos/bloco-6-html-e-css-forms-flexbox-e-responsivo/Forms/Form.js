@@ -5,7 +5,7 @@ function createStateOptions(){
   for (let i = 0; i < statesOptions.length; i +=1) {
     let option = document.createElement('option');
     option.innerText = statesOptions[i];
-    option.value = statesOptions[i];
+    option.setAttribute('value', statesOptions[i]);
     states.appendChild(option);
   }
 }
@@ -22,7 +22,7 @@ window.onload = function (){
 function handleSubmit(event){
   event.preventDefault();
 
-  let validation = validateData();
+let validation = validateData();
 
   clearDivs();
 
