@@ -89,12 +89,6 @@ validate
     weekDayLabels: ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab', 'Dom'],
   }
 
-document.getElementById('dateForm').DatePickerX.init(datePickerObj);
-document.querySelector('#btn-change').addEventListener('click', () => {
-  document.getElementById('input-data').DatePickerX.remove();
-  datePickerObj.mondayFirst = datePickerObj.mondayFirst ? false : true;
-  document.getElementById('input-data').DatePickerX.init(datePickerObj);
-});
 
 
 

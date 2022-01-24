@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.d-block3{
+  width: 700px;
+  height: 400px;
+}
+
+.d-block{
+  display: flex;
+  flex-basis: 45px;
+}
